@@ -32,6 +32,8 @@
 	var animateTimeline,
 		welcomeAnimDone;
 
+	var client_logos = $(".img-container");
+
 // VIVUS SVG ANIMATIONS
 	welcomeAnimDone = function(){
 		name.animate({ 
@@ -82,7 +84,7 @@
 	});
 
 // INVIEW DETECTING ELEMENTS FOR ANIMATION
-	function doThis(){
+	function timelineAnimation(){
 		timeline_sub_body_1.delay(300).animate({opacity: 1}, 600);
 		timeline_sub_body_2.delay(800).animate({opacity: 1}, 600);
 		timeline_body_copy_1.delay(2500).animate({opacity: 1}, 600);
@@ -108,9 +110,20 @@
 		});
 	
 	//TIMELINE COPY ANIMATION
-	window.setTimeout(doThis, 200);
+	window.setTimeout(timelineAnimation, 200);
 	};
 
 	inView("#section2")
 		.once('enter', animateTimeline);
+
+	//SECTION 2 LOGO ANIMATIONS
+	function animateClientLogo(el){
+		el.fadeIn();
+		el.addClass("animated-client-logo");
+	}
+
+	client_logos.each(function(){
+		console.log( $(this) );
+		animateClientLogo( $(this) );
+	});
 })();
