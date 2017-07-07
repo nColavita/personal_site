@@ -55,7 +55,7 @@
 	}, welcomeAnimDone);
 
 	//LOGO ON HOVER
-	$("#navbar-brand-container").on('mouseenter', function(){
+	$("#navbar-brand-container").on('mouseover', function(){
 		logo_svg = new Vivus('navbar-brand-id', {
 			type: 'delayed',
 			duration: 100,
@@ -116,14 +116,35 @@
 	inView("#section2")
 		.once('enter', animateTimeline);
 
-	//SECTION 2 LOGO ANIMATIONS
-	function animateClientLogo(el){
-		el.fadeIn();
-		el.addClass("animated-client-logo");
+//SECTION 3 LOGO ANIMATIONS
+	function animateClients(){
+		console.log("section 4 in view");
+		$('.client-col').each(function(i){
+			$(this).delay(800*i).animate({
+				'top':'0',
+				'opacity': '1'
+			}, 'slow');
+		});
 	}
 
-	client_logos.each(function(){
-		console.log( $(this) );
-		animateClientLogo( $(this) );
+	inView("#section3")
+		.once('enter', animateClients)
+
+//SECTION 3 VIEW ANIMATIONS
+	$('.view-now').on('mouseover', function(){
+		$(this).children('.work-overlay').animate({
+			'opacity': '1'
+		}, 500);
 	});
+	$('.view-now').on('mouseleave', function(){
+		$(this).children('.work-overlay').animate({
+			'opacity': '0'
+		}, 500);
+	});
+
+
+
+
+
+	
 })();

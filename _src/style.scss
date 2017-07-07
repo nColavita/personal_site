@@ -141,7 +141,7 @@ body, html{
 
 .timeline-body-copy{
     color: black;
-    line-height: 2rem;    
+    line-height: 1.35rem;    
     padding: 50px 0 50px 0;
 }
 
@@ -183,17 +183,17 @@ body, html{
 }
 
 .timeline-sub-content-top{
-    top: 345px;
+    top: 320px;
 }
 
 .timeline-sub-content-bottom{
-    top: 575px;
+    top: 510px;
 }
 
 .timeline-sub-body{
     opacity: 0;
     font-size: 0.85rem;
-    line-height: 1rem;
+    line-height: 1.1rem;
     width: 15%;
     color: $font-color;
     text-align: left;
@@ -203,6 +203,12 @@ body, html{
 #section3-container{
     margin-top: 30px;
     margin-bottom: 248px;
+}
+
+.client-col{
+    position: relative;
+    top: 100px;
+    opacity: 0;
 }
 
 .work-rows-container{
@@ -224,6 +230,8 @@ body, html{
 
 .work, .interior-column{
     border: solid 1px grey;
+    text-align: center;
+    overflow: hidden;
 }
 
 .work, .work-interior{
@@ -233,12 +241,16 @@ body, html{
 }
 .work-long{
     display: flex;
-    background-color: black;
     height: 830px;
 }
 
-.work-long-cartier{
-    background-color: #700404;
+.work-long-prvt{
+    border: solid grey 1px;
+    background-color: white;
+}
+
+.work-long-bby{
+    background-color: black;
 }
 
 .interior-column{
@@ -259,31 +271,86 @@ body, html{
     // display: none;
 }
 
-.reebok-img{
-    width: 450px;
+.work-overlay{
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom:0; right: 0;
+    width: 85%;
+    height: 85%;
+    font-family: $sanserif;
+    font-size: 3rem;
+    cursor: pointer;    
+    opacity: 0;
+}
+
+.work-view-container{
+    display: flex;    
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom:0; right: 0; 
+}
+
+.work-view{
+    margin: auto;
+    align-items: center; //<---- IE WORKAROUND
+}
+
+.levis-overlay{
+    background-color: rgba(196, 32, 50, 0.95);
+}
+
+.arconic-overlay{
+    background-color: rgba(6, 175, 185, 0.95);
+}
+
+.hilton-overlay{
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.reebok-overlay{
+    background-color: rgba(196, 32, 51, 0.95);
+}
+
+.prvt-overlay{
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.grubhub-overlay{
+    background-color: rgba(232, 47, 54, 0.95);
+}
+
+.novartis-overlay{
+    background-color: rgba(0, 125, 159, 0.95);
+}
+
+.devry-overlay{
+    background-color: rgba(213, 159, 15, 0.95);
+}
+
+.sprout-overlay{
+    background-color: rgba(28, 86, 48, 0.95);
+}
+
+.bby-overlay{
+    background-color: rgba(255, 255, 255, 0.95);
+    p{
+        color: black;
+    }
 }
 
 // ----- LOGOS ---- //
-.bby-logo{
-    width: 450px;
-}
-
-.devry-logo{
-    width: 450px;
-}
-
 .cartier-logo{
     width: 300px;
 }
 
-.sprout-logo{
+.bby-logo, .devry-logo, .sprout-logo, .reebok-img{
     width: 450px;
 }
 
 // *****------ SECTION 4 ------*****
 #section4{
     // background-color: rgba(189, 202, 212, 0.5);
-    background-color: black;
+    background-color: #7D8EBE;
 }
 
 .media-links{
@@ -291,12 +358,12 @@ body, html{
 }
 
 .connect-row{
-    padding: 75px 0 75px 0;
+    padding: 30px 0 30px 0;
 }
 .media-links-img-container{
     margin: auto;
     align-items: center; //<---- IE WORKAROUND
-    width: 70px;
+    width: 50px;
 }
 
 // ----------------------------------------------- MEDIA QUERIES ----------------------------------------------- //
@@ -306,6 +373,9 @@ body, html{
         padding-right: 0 !important;
     }
 //SECTION 3
+    #section3-container{
+        margin-bottom: 0;
+    }
     .section3-row{
         padding-top: 0;
     }
@@ -335,7 +405,7 @@ body, html{
 @media screen and (min-width: '766px'){
 //SECTION 3
     .img-container img{
-        width: 350px;
+        width: 290px;
     }
     
     .arconic-logo{
@@ -351,21 +421,21 @@ body, html{
     }
 
     .bby-logo, .devry-logo, .sprout-logo{
-        width: 400px !important;
+        width: 320px !important;
     }
 }
 
-@media screen and ( min-width: '1024px'){
+@media screen and (min-width: '1024px'){
 //SECTION 2
     #section2{
         height: 100%;
     }
 
-    .timeline-sub-content-top{
-        top: 345px;
+    .img-container img{
+        width: 400px;
     }
 
-    .timeline-sub-content-bottom{
-        top: 565px;
-    }
+    .bby-logo, .devry-logo, .sprout-logo{
+        width: 400px !important;
+    }    
 }
