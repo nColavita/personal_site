@@ -1,0 +1,31 @@
+$serif: 'Josefin Slab', serif;
+$sanserif: 'Noto Sans', sans-serif;
+$font-color: #515151;
+
+body, html{
+    font-family: $sanserif;
+    color: white;
+}
+
+.container-fluid{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.clients-include, .connect{
+    margin-top: 85px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: $serif;
+    color: $font-color;
+}
+
+// *****------ SECTION ------*****
+.section{
+   min-height: 100vh;
+}

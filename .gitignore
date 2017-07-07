@@ -40,5 +40,6 @@ Thumbs.db
 # CodeKit #
 ######################
 config.codekit
+*.sass-cache
 
 projects

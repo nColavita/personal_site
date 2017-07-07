@@ -1,0 +1,35 @@
+// *****------ NAV BAR ------*****
+#navbar-brand-container:hover{
+    cursor: pointer;
+}
+
+#navbar-brand-id{
+    width: 60px;
+}
+
+.navbar{
+    background-color: #f7f7f7;
+}
+
+.logo{
+    width: 50px;
+    height: auto;
+}
+
+.nav-item{
+    color: $font-color !important;
+}
+
+
+.nav-item a{
+    margin-left: 25px;
+    transition: all .2s ease-in-out;        
+}
+.nav-item a:hover{
+    transform: scale(1.1);
+    border-bottom: solid grey 1px;
+}
+
+#section1, #section2{
+    display: flex;    
+}

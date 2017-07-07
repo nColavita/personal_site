@@ -1,0 +1,210 @@
+// *****------ SECTION 3 ------*****
+#section3-container{
+    margin-top: 30px;
+    margin-bottom: 248px;
+}
+
+.client-col{
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+.work-rows-container{
+    margin-top: 85px;
+}
+
+.work-rows-container-continued{
+    margin-top: 30px;
+}
+
+.interior-row{
+    width: 100%;
+    margin: 0;
+}
+
+.section3-row{
+    padding-top: 30px;
+}
+
+.work, .interior-column{
+    border: solid 1px grey;
+    text-align: center;
+    overflow: hidden;
+}
+
+.work, .work-interior{
+    display: flex;
+    // background-color: grey;
+    height: 400px;
+}
+.work-long{
+    display: flex;
+    height: 830px;
+}
+
+.work-long-prvt{
+    border: solid grey 1px;
+    background-color: white;
+}
+
+.work-long-bby{
+    background-color: black;
+}
+
+.interior-column{
+    // background-color: grey; 
+    height: 400px;
+}
+.interior-column-second{
+    margin-top: 30px !important;    
+}
+
+.animate-client-logo{
+     transform: scale( 1 );
+}
+
+.img-container{
+    margin: auto;
+    align-items: center; //<---- IE WORKAROUND
+    // display: none;
+}
+
+.work-overlay{
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom:0; right: 0;
+    width: 85%;
+    height: 85%;
+    font-family: $sanserif;
+    font-size: 3rem;
+    cursor: pointer;    
+    opacity: 0;
+}
+
+.work-view-container{
+    display: flex;    
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom:0; right: 0; 
+}
+
+.work-view{
+    margin: auto;
+    align-items: center; //<---- IE WORKAROUND
+}
+
+.levis-overlay{
+    background-color: rgba(196, 32, 50, 0.95);
+}
+
+.arconic-overlay{
+    background-color: rgba(6, 175, 185, 0.95);
+}
+
+.hilton-overlay{
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.reebok-overlay{
+    background-color: rgba(196, 32, 51, 0.95);
+}
+
+.prvt-overlay{
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.grubhub-overlay{
+    background-color: rgba(232, 47, 54, 0.95);
+}
+
+.novartis-overlay{
+    background-color: rgba(0, 125, 159, 0.95);
+}
+
+.devry-overlay{
+    background-color: rgba(213, 159, 15, 0.95);
+}
+
+.sprout-overlay{
+    background-color: rgba(28, 86, 48, 0.95);
+}
+
+.bby-overlay{
+    background-color: rgba(255, 255, 255, 0.95);
+    p{
+        color: black;
+    }
+}
+
+// ----- LOGOS ---- //
+.cartier-logo{
+    width: 300px;
+}
+
+.bby-logo, .devry-logo, .sprout-logo, .reebok-img{
+    width: 450px;
+}
+
+// ----------------------------------------------- MEDIA QUERIES ----------------------------------------------- //
+@media screen and (max-width: '765px'){
+    #section3-container{
+        margin-bottom: 0;
+    }
+    .section3-row{
+        padding-top: 0;
+    }
+    .interior-column-second, .work-rows-container-continued{
+        margin-top: 0 !important;
+    }
+    .work, .work-interior, .interior-column{
+        height: 200px;
+    }
+    .work-long{
+        height: 200px;
+    }
+
+    .img-container img{
+        width: 300px;
+    }
+    
+    .arconic-logo, {
+        width: 130px !important;
+    }
+
+    .levi-logo, .hilton-logo{
+        width: 200px !important;
+    } 
+}
+
+@media screen and (min-width: '766px'){
+    .img-container img{
+        width: 290px;
+    }
+    
+    .arconic-logo{
+        width: 210px !important;
+    }
+
+    .levi-logo{
+        width: 250px !important;
+    }
+
+    .hilton-logo{
+        width: 300px !important;
+    }
+
+    .bby-logo, .devry-logo, .sprout-logo{
+        width: 320px !important;
+    }
+}
+
+@media screen and (min-width: '1024px'){
+    .img-container img{
+        width: 400px;
+    }
+
+    .bby-logo, .devry-logo, .sprout-logo{
+        width: 400px !important;
+    }    
+}

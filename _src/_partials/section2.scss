@@ -1,0 +1,82 @@
+// *****------ SECTION 2 ------*****
+
+#section2{
+    background-color: rgba(225,225,225, 0.75);
+    height: 70vh;
+    text-align: center;
+    // max-width: 1200px;
+}
+
+#timeline-svg{
+    opacity: 0;
+}
+
+.timeline-body-copy-top, .timeline-body-copy-bottom-left, .timeline-body-copy-bottom-right{
+    opacity: 0;
+}
+
+.timeline-body-copy{
+    color: black;
+    line-height: 1.35rem;    
+    padding: 50px 0 50px 0;
+}
+
+.timeline-body-copy-top{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.timeline-body-copy-bottom{
+    width: 50%;
+    float: left;
+}
+
+.timeline-body-copy-bottom-container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.chart-dates{
+    font-family: $serif;    
+    font-size: 4rem;    
+    padding-bottom: 40px;
+}
+
+.date1{
+    color: #F3A096;
+}
+.date2{
+    color: #A7CBAF;
+}
+.date3{
+    color: #7D8EBE;
+}
+
+.timeline-sub-content{
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+}
+
+.timeline-sub-content-top{
+    top: 320px;
+}
+
+.timeline-sub-content-bottom{
+    top: 510px;
+}
+
+.timeline-sub-body{
+    opacity: 0;
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+    width: 15%;
+    color: $font-color;
+    text-align: left;
+}
+
+@media screen and (min-width: '1024px'){
+    #section2{
+        height: 100%;
+    }  
+}
