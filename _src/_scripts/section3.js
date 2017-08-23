@@ -1,12 +1,12 @@
-$(function(){
+(function(){
     var delay = 250;
 
-	$('.view-now').on('mouseover', function(){
-		$(this).children('.img-container').css('transform', 'scale(1.25)');
-	});
-	$('.view-now').on('mouseout', function(){
-		$(this).children('.img-container').css('transform', 'scale(1)');
-	});	
+    $('.view-now').on('mouseover', function(){
+        $(this).children('.img-container').css('transform', 'scale(1.25)');
+    });
+    $('.view-now').on('mouseout', function(){
+        $(this).children('.img-container').css('transform', 'scale(1)');
+    });	
 
     function setIframeSource(w,h,s){
         var width = w, height = h, source = s;
@@ -18,14 +18,14 @@ $(function(){
     }
 
     function animateClients(){
-		console.log("section 4 in view");
-		$('.client-col').each(function(i){
-			$(this).delay(800*i).animate({
-				'top':'0',
-				'opacity': '1'
-			}, 'slow');
-		});
-	}
+        console.log("section 4 in view");
+        $('.client-col').each(function(i){
+            $(this).delay(800*i).animate({
+                'top':'0',
+                'opacity': '1'
+            }, 'slow');
+        });
+    }
 
     $('.view-now').on('click', function(){
         if( $(this).children('div').hasClass('levis-overlay') ){
@@ -84,7 +84,6 @@ $(function(){
         $("#banner-container").fadeOut();
     });
 
-	inView("#section3")
-		.once('enter', animateClients);
-
+    inView("#section3")
+        .once('enter', animateClients);
 })();

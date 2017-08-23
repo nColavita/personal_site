@@ -1,8 +1,8 @@
-$(function(){
+(function(){
     var timeline = $("#timeline-svg"),
         animateTimeline;
 
-	var timeline_body_copy_1 = $("#timeline_body_copy_1"),
+    var timeline_body_copy_1 = $("#timeline_body_copy_1"),
         timeline_body_copy_2 = $("#timeline_body_copy_2"),
         timeline_body_copy_3 = $("#timeline_body_copy_3"),
         timeline_sub_body_1 = $("#timeline-sub-body-1"),
@@ -12,8 +12,8 @@ $(function(){
         timeline_sub_body_5 = $("#timeline-sub-body-5"),
         timeline_sub_body_6 = $("#timeline-sub-body-6"),
         timeline_sub_body_7 = $("#timeline-sub-body-7"),
-        timeline_sub_body_8 = $("#timeline-sub-body-8");    
-    
+        timeline_sub_body_8 = $("#timeline-sub-body-8");
+
     function timelineAnimation(){
         timeline_sub_body_1.delay(300).animate({opacity: 1}, 600);
         timeline_sub_body_2.delay(800).animate({opacity: 1}, 600);
@@ -30,20 +30,19 @@ $(function(){
         timeline_sub_body_8.delay(9200).animate({opacity: 1}, 600);		
     }
 
-	animateTimeline = function(){
-		console.log("IN VIEW!");
-		$("#timeline-svg").css("opacity", "1");
-		timeline = new Vivus('timeline-svg', {
-			type: 'oneByOne',
-			duration: 600,
-			// animTimingFunction: Vivus.EASE
+    animateTimeline = function(){
+        console.log("IN VIEW!");
+        $("#timeline-svg").css("opacity", "1");
+        timeline = new Vivus('timeline-svg', {
+            type: 'oneByOne',
+            duration: 600,
+            // animTimingFunction: Vivus.EASE
         });
+        
+        //TIMELINE COPY ANIMATION
+        window.setTimeout(timelineAnimation, 200);    
     };
 
-	inView("#section2")
-        .once('enter', animateTimeline);    
-
-    //TIMELINE COPY ANIMATION
-    window.setTimeout(timelineAnimation, 200);
-    
+    inView("#section2")
+        .once('enter', animateTimeline);
 })();

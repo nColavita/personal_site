@@ -28,3 +28,13 @@
         }
     }    
 }
+
+.copyright-container{
+    display: flex;
+}
+.copyright{
+    margin: auto;
+    p{
+        font-size: 0.75em;
+    }
+}
