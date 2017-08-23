@@ -1,18 +1,30 @@
 // *****------ SECTION 4 ------*****
-#section4{
-    // background-color: rgba(189, 202, 212, 0.5);
-    background-color: #7D8EBE;
-}
-
-.media-links{
+#footer{
     display: flex;
+    background-color: grey;
+    height: 90px;
+    position: relative;
+    
+    .container{
+        margin: auto;
+    }
 }
 
-.connect-row{
-    padding: 30px 0 30px 0;
-}
-.media-links-img-container{
-    margin: auto;
-    align-items: center; //<---- IE WORKAROUND
-    width: 50px;
+#footer-items{
+    ul{
+        li{
+            display: inline-block;
+            margin-left: 18%;
+
+            -webkit-transition: all 600ms ease-in;    
+            -ms-transition: all 600ms ease-in;    
+            -moz-transition: all 600ms ease-in;
+            transition: all 600ms ease-in;               
+            a{
+                img{
+                    width: 30px;
+                }
+            }
+        }
+    }    
 }

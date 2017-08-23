@@ -7,6 +7,10 @@ body, html{
     color: white;
 }
 
+#site-container{
+    overflow: hidden;
+}
+
 .container-fluid{
     max-width: 1300px;
     margin-left: auto;
@@ -27,5 +31,5 @@ body, html{
 
 // *****------ SECTION ------*****
 .section{
-   min-height: 100vh;
+   min-height: calc(100vh - 105px);
 }

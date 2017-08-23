@@ -2,6 +2,7 @@
 
 #section1{
     background-color: rgba(189, 202, 212, 0.5);
+    height: 100vh !important;
 }
 
 .section1-container, .section2-container{
@@ -23,6 +24,10 @@
 .sub-headline-container{
     padding: 50px 0 0 0;
     text-align: center;
+}
+
+#welcome-svg{
+    width: 100%;
 }
 
 #name, #title{

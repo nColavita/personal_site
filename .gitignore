@@ -29,8 +29,8 @@
 
 # OS generated files #
 ######################
-.DS_Store
-.DS_Store?
+*.DS_Store
+*.DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
@@ -40,6 +40,7 @@ Thumbs.db
 # CodeKit #
 ######################
 config.codekit
+config.codekit3
 *.sass-cache
 
 projects
