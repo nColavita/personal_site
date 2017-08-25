@@ -1,4 +1,11 @@
 // *****------ NAV BAR ------*****
+#navbar-brand-container{
+    width: 60px;
+    height: 90px;
+}
+svg {
+    z-index: -1 !important;
+}
 #navbar-brand-container:hover{
     cursor: pointer;
 }
@@ -9,6 +16,8 @@
 
 .navbar{
     background-color: #f7f7f7;
+    // background-color: rgba(189, 202, 212, 0.95);
+    border-bottom: solid rgb(98, 106, 111) 1px;
 }
 
 .logo{
@@ -20,12 +29,12 @@
     color: $font-color !important;
 }
 
-
 .nav-item a{
     margin-left: 25px;
     transition: all .2s ease-in-out;        
 }
 .nav-item a:hover{
+    cursor: pointer;    
     transform: scale(1.1);
     border-bottom: solid grey 1px;
 }

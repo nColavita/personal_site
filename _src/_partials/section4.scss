@@ -1,40 +1,14 @@
-// *****------ SECTION 4 ------*****
-#footer{
-    display: flex;
-    background-color: grey;
-    height: 90px;
-    position: relative;
-    
-    .container{
-        margin: auto;
-    }
-}
-
-#footer-items{
-    ul{
-        li{
-            display: inline-block;
-            margin-left: 18%;
-
-            -webkit-transition: all 600ms ease-in;    
-            -ms-transition: all 600ms ease-in;    
-            -moz-transition: all 600ms ease-in;
-            transition: all 600ms ease-in;               
-            a{
-                img{
-                    width: 30px;
-                }
-            }
-        }
-    }    
-}
-
-.copyright-container{
+.screenshot{
     display: flex;
 }
-.copyright{
+.screenshot-anchor{
     margin: auto;
-    p{
-        font-size: 0.75em;
+    a img{
+        margin-left: 20%;
     }
+}
+
+.screenshot img{
+    width: 70%;
+    height: auto;
 }

@@ -7,6 +7,10 @@ body, html{
     color: white;
 }
 
+p{
+    line-height: 100% !important;
+}
+
 #site-container{
     overflow: hidden;
 }
@@ -27,6 +31,22 @@ body, html{
     font-size: 3rem;
     font-family: $serif;
     color: $font-color;
+}
+
+.section-title{
+    margin-bottom: 50px;    
+}
+
+.section-custom-height{
+    min-height: auto !important;
+    margin-bottom: 50px;
+}
+
+i{
+    color: white;
+}
+i:hover{
+    cursor: pointer;
 }
 
 // *****------ SECTION ------*****
